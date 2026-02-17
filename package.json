@@ -1,0 +1,10 @@
+{
+  "name": "webapp",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --names \"frontend,backend\" --prefix-colors \"cyan,magenta\" \"npm run dev --prefix frontend\" \"uvicorn app.main:app --reload --app-dir backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
